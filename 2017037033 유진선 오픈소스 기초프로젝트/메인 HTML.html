@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+function showdate(){
+var d_t=new Date();
+var month=d_t.getMonth();
+var date=d_t.getDate();
+var day=d_t.getDay()
+var week=["일","월","화","수","목","금","토"];
+var hours=d_t.getHours();
+var minutes=d_t.getMinutes();
+var seconds=d_t.getSeconds();
+var showday=
+document.getElementById("showday").innerText=
+(month+1)+"월 "+date+"일 "+week[day]+"요일 ";
+var showtime=document.getElementById("showtime").innerText=
+hours+"시 "+minutes+"분 "+seconds+"초";
+setTimeout(showdate,1000);
+}
+</SCRIPT>
+<TITLE>개인 홈페이지</TITLE>
+<STYLE TYPE="text/css">
+#wrapper{width:980px;margin:0px auto;padding:20px;border-radius:20px;border;1px solid #828282;}
+#header{margin-bottom:10px;padding:20px;border:1px solid#828282;}
+#left{margin: 0 10px 10px 0; padding: 20px:width: 200px;float: left;height:650px; border:1px solid#828282;}
+#section{margin-bottom:20px;padding:20px;width 53%;float:left; border:1px solid#828282;border-radius: 10px;width: 500px;height:700px;}
+#aside_right{margin-bottom:20px;padding:20px;width:170px;height:700px; float: right; border: 1px solid#828282;}
+#footer{clear:both;border-style:groove;margin:0px 5px;text-align:center;border:1px solid#828282;}
+</STYLE>
+<style>
+body{
+background-image:url('바탕화면.jpg');
+background-repeat : no-repeat;
+background-size:cover;
+}
+</style></HEAD>
+<BODY onload="showdate()" background="바탕화면.jpg" TEXT="white">
+<audio src="Dream_Lagoon.mp3" autoplay=""> </audio>
+<div id="wrapper">
+<div id="header">
+<center><h1>오픈소스기초프로젝트 기말 과제 홈페이지</h1>
+</div>
+<div id="left"><BR><BR><BR><center><h2><div id="showday"></div><BR><div id="showtime"></div></center></h2><BR><BR>
+<center><A TARGET="_blank" HREF="https://www.weather.go.kr/w/index.do"><IMG SRC="기상청.png"></A><BR></center>
+<center><H2>위에 그림 클릭시<BR> 기상청 홈페이지로 <BR>이동합니다.</H2></center><BR><BR>
+</div>
+<div id="section">
+<center>
+<A  TARGET="_blank" HREF="검색사이트.HTML"><IMG SRC="검색엔진로고.png"></A>
+<A  TARGET="_blank" HREF="https://www.youtube.com/?app=desktop&spfreload=10"><IMG SRC="유튜브로고.png"></A><BR>
+<A  TARGET="_blank" HREF="쇼핑몰프레임.HTML"><IMG SRC="쇼핑몰로고.png"></A><BR>
+<A  TARGET="_blank" HREF="수지상태표프레임.HTML"><IMG SRC="수지상태표로고.png"></A>
+<A  TARGET="_blank" HREF="학사정보프레임.HTML"><IMG SRC="학사정보로고.png"></A><BR>
+</center>
+</div>
+<div id="aside_right"><H2><center>자기소개<BR>
+이름: 유진선<BR><H6>학번: 2017037033<BR>Phone Number<BR>010-7271-9884</h6><BR><BR>
+학교 정보<BR><BR>
+<A  TARGET="_blank" HREF="https://www.chungbuk.ac.kr/site/www/main.do"><IMG SRC="학교 로고.png"></A><BR><BR>
+학과 정보<BR>
+<A  TARGET="_blank" HREF="http://computer.cbnu.ac.kr/"><IMG SRC="학과이미지.png"></A><BR>
+</div>
+<div id ="footer"> 1학기동안 수고 많으셨습니다. </div></div>
+</BODY>
+</HTML>
